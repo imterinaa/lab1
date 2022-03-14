@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Executable>C:\Users\Dedmo\Source\Repos\Lab-Polynomials\x64\Debug\Gtests.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="TPolinom.Created_polinom_is_empty" Duration="1" />
+    <TestDuration Test="TPolinom.Created_polinom_with_one_monom_is_not_empty" Duration="1" />
+    <TestDuration Test="TPolinom.Coefficients_add_up_if_degrees_are_equal" Duration="1" />
+    <TestDuration Test="TPolinom.Coefficients_dont_add_up_if_degrees_are_different" Duration="1" />
+    <TestDuration Test="TPolinom.Monom_delete_if_coefficient_equal_zero" Duration="1" />
+    <TestDuration Test="TPolinom.Can_not_get_monom_from_empty_polinom" Duration="1" />
+    <TestDuration Test="TPolinom.Copied_polinom_is_equal_copiable" Duration="1" />
+    <TestDuration Test="TPolinom.Assigned_polinom_is_equal_assignable" Duration="1" />
+    <TestDuration Test="TPolinom.Correct_adding_operator" Duration="1" />
+    <TestDuration Test="TPolinom.Correct_constant_multiply" Duration="1" />
+    <TestDuration Test="TPolinom.Correct_monom_multiply" Duration="1" />
+    <TestDuration Test="TPolinom.Correct_polinom_enter" Duration="1" />
+    <TestDuration Test="TPolinom.Correct_multiply_polinom" Duration="1" />
+    <TestDuration Test="TPolinom.can_pack_similar_degrees" Duration="1" />
+    <TestDuration Test="TPolinom.can_dont_pack_if_degrees_are_different" Duration="1" />
+    <TestDuration Test="TPolinom.can_not_get_monom_from_empty_polinom" Duration="1" />
+    <TestDuration Test="TPolinom.can_make_a_copy_of_polinom" Duration="1" />
+    <TestDuration Test="TPolinom.can_sum_polinoms" Duration="1" />
+    <TestDuration Test="TPolinom.can_mult_const_to_polinom" Duration="1" />
+    <TestDuration Test="TPolinom.can_monom_multiply" Duration="1" />
+    <TestDuration Test="TPolinom.can_pack_similar_and_delete" Duration="1" />
+    <TestDuration Test="TPolinom.can_mult_polinom" Duration="1" />
+    <TestDuration Test="TMonom.can_create_monom" Duration="1" />
+    <TestDuration Test="TMonom.can_ins_monom_with_pos_coef" Duration="1" />
+    <TestDuration Test="TMonom.can_ins_monom_with_neg_coef" Duration="1" />
+    <TestDuration Test="TMonom.can_compare_the_monom" Duration="1" />
+    <TestDuration Test="TMonom.can_compare_the_monoms" Duration="1" />
+    <TestDuration Test="TMonom.can_compare" Duration="1" />
+    <TestDuration Test="THeadList.can_create_list" Duration="1" />
+    <TestDuration Test="THeadList.can_insert_first" Duration="1" />
+    <TestDuration Test="THeadList.can_del_first" Duration="1" />
+    <TestDuration Test="THeadList.can_insert_last" Duration="1" />
+    <TestDuration Test="THeadList.can_del_last" Duration="1" />
+    <TestDuration Test="THeadList.can_insert_current" Duration="1" />
+    <TestDuration Test="THeadList.can_delete_current" Duration="1" />
+    <TestDuration Test="THeadList.cant_delete_first_in_empty_list" Duration="1" />
+    <TestDuration Test="THeadList.cant_delete_current_in_empty_list" Duration="1" />
+  </TestDurations>
+</GtaTestDurations>
