@@ -118,7 +118,7 @@ void TPolinom::AddMonom(TMonom m)
 	}
 	return result;
 }
-
+ 
 TPolinom TPolinom::operator+(TPolinom& m)
 {
 	TPolinom result(m);
@@ -152,6 +152,46 @@ TPolinom TPolinom::operator+(TPolinom& m)
 	}
 	return result;
 }
+
+ /*TPolinom TPolinom::operator+(TPolinom& m)
+ {
+	 TPolinom res(*this);
+	 TMonom vcurrres, vcurrpol;
+	 res.Reset();
+	 m.Reset();
+	 while (!m.IsEnd())
+	 {
+		 vcurrres = res.pCurr->val;
+		 vcurrpol = m.pCurr->val;
+		 if (vcurrres > vcurrpol)
+		 {
+			 res.GoNext();
+		 }
+		 else if (vcurrres < vcurrpol)
+		 {
+			 InsCurr(vcurrpol);
+			 m.GoNext();
+		 }
+		 else
+		 {
+			 res.pCurr->val.coef += m.pCurr->val.coef;
+			 if (res.pCurr->val.coef != 0)
+			 {
+				 res.GoNext();
+				 m.GoNext();
+
+			 }
+			 else
+			 {
+				 res.DelCurr();
+				 m.GoNext();
+			 }
+
+		 }
+
+	 }
+	 return res;
+ }*/
 
 
 

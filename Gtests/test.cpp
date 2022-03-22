@@ -51,21 +51,58 @@ TEST(TPolinom, can_make_a_copy_of_polinom) {
 	TPolinom copied(copiable);
 	EXPECT_TRUE(copied == copiable);
 }
-
-
-TEST(TPolinom, can_sum_polinoms) {
-	TPolinom _res; _res.AddMonom(TMonom(4, 1, 1, 2)); _res.AddMonom(TMonom(6, 1, 2, 1));
-	TPolinom polinom1;
-	polinom1.AddMonom(TMonom(-1, 1, 1, 1));
-	polinom1.AddMonom(TMonom(2, 1, 1, 2));
-	polinom1.AddMonom(TMonom(3, 1, 2, 1));
+TEST(TPolinom, can__sum__polinoms1) {
+	TPolinom _res; _res.AddMonom(TMonom(2, 1, 2, 3));
+	TPolinom p1;
+	p1.AddMonom(TMonom(1, 1, 2, 1));
+	p1.AddMonom(TMonom(1, 1, 2, 3));
+	p1.AddMonom(TMonom(1, 1, 2, 1));
 	TPolinom polinom2;
-	polinom2.AddMonom(TMonom(1, 1, 1, 1));
-	polinom2.AddMonom(TMonom(2, 1, 1, 2));
-	polinom2.AddMonom(TMonom(3, 1, 2, 1));
-	TPolinom result = polinom1 + polinom2;
-	
+	polinom2.AddMonom(TMonom(-1, 1, 2, 1));
+	polinom2.AddMonom(TMonom(1, 1, 2, 3));
+	polinom2.AddMonom(TMonom(-1, 1, 2, 1));
 
+	TPolinom result = p1 + polinom2;
+	EXPECT_TRUE(result == _res);
+}
+TEST(TPolinom, can_sum__polinoms1) {
+	TPolinom _res; _res.AddMonom(TMonom(2, 1, 2, 3));
+	TPolinom p1;
+	p1.AddMonom(TMonom(1, 1, 2, 1));
+	p1.AddMonom(TMonom(-1, 1, 1, 1));
+	p1.AddMonom(TMonom(1, 1, 2, 3));
+	TPolinom polinom2;
+	polinom2.AddMonom(TMonom(-1, 1, 2, 1));
+	polinom2.AddMonom(TMonom(1, 1, 2, 3));
+	polinom2.AddMonom(TMonom(1, 1, 1, 1));
+	
+	TPolinom result = p1 + polinom2;
+	EXPECT_TRUE(result == _res);
+}
+TEST(TPolinom, can_sum_polinoms1) {
+	TPolinom _res; _res.AddMonom(TMonom(2, 1, 2, 3));
+	TPolinom p1;
+	p1.AddMonom(TMonom(1, 1, 2, 1));
+	p1.AddMonom(TMonom(-1, 1, 1, 1));
+	p1.AddMonom(TMonom(1, 1, 2, 3));
+	TPolinom polinom2;
+	polinom2.AddMonom(TMonom(1, 1, 2, 3));
+	polinom2.AddMonom(TMonom(1, 1, 1, 1));
+	polinom2.AddMonom(TMonom(-1, 1, 2, 1));
+	TPolinom result = p1 + polinom2;
+	EXPECT_TRUE(result == _res);
+}
+TEST(TPolinom, can_sum_polinoms) {
+	TPolinom _res; _res.AddMonom(TMonom(2, 1, 2, 3));
+	TPolinom p1;
+	p1.AddMonom(TMonom(1, 1, 2, 3));
+	p1.AddMonom(TMonom(-1, 1, 1, 1));
+	p1.AddMonom(TMonom(1, 1, 2, 1));
+	TPolinom polinom2;
+	polinom2.AddMonom(TMonom(1, 1, 2, 3));
+	polinom2.AddMonom(TMonom(1, 1, 1, 1));
+	polinom2.AddMonom(TMonom(-1, 1, 2, 1));
+	TPolinom result = p1 + polinom2;
 	EXPECT_TRUE(result==_res);
 }
 

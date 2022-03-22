@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GtaTestDurations xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Executable>C:\Users\Dedmo\Source\Repos\Lab-Polynomials\x64\Debug\Gtests.exe</Executable>
+  <Executable>C:\Users\Dedmo\Source\Repos\lab1\x64\Debug\Gtests.exe</Executable>
   <TestDurations>
     <TestDuration Test="TPolinom.Created_polinom_is_empty" Duration="1" />
     <TestDuration Test="TPolinom.Created_polinom_with_one_monom_is_not_empty" Duration="1" />
@@ -39,5 +39,9 @@
     <TestDuration Test="THeadList.can_delete_current" Duration="1" />
     <TestDuration Test="THeadList.cant_delete_first_in_empty_list" Duration="1" />
     <TestDuration Test="THeadList.cant_delete_current_in_empty_list" Duration="1" />
+    <TestDuration Test="TPolinom.can_sum_polinoms1" Duration="1" />
+    <TestDuration Test="TPolinom.can_sum__polinoms1" Duration="1" />
+    <TestDuration Test="TPolinom.can_sum___polinoms1" Duration="2" />
+    <TestDuration Test="TPolinom.can__sum__polinoms1" Duration="1" />
   </TestDurations>
 </GtaTestDurations>

@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "87516955-d368-459a-a21c-d283117e9c56": {
+      "ProjectGuid": "87516955-d368-459a-a21c-d283117e9c56",
+      "DisplayName": "Lab-Polynomials",
+      "ColorIndex": 0
+    },
+    "f0221b02-eafc-43df-a6e7-144e1e82fc5c": {
+      "ProjectGuid": "f0221b02-eafc-43df-a6e7-144e1e82fc5c",
+      "DisplayName": "Gtests",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
